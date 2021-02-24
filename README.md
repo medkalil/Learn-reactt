@@ -20,6 +20,12 @@ class App extends React.Component {
            const updatedList= prevState.todos.map(item =>{
                if(item.id == id){
                    item.completed = !item.completed
+                   /*
+                   line 22 or return {
+                    ...item,
+                    completed : !item.completed
+                   } 
+                   */
                }
                return item
            } )
